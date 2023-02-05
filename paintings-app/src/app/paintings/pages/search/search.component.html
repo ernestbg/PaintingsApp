@@ -1,0 +1,36 @@
+<div fxLayout="column">
+
+    <div>
+        <h1>Search painting</h1>
+        <mat-divider></mat-divider>
+    </div>
+
+</div>
+<div fxLayout="column">
+
+    <mat-form-field>
+
+        <input type="text" placeholder="Pick one" aria-label="Number" matInput [(ngModel)]="term"
+            [matAutocomplete]="auto" (input)="search()">
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" (optionSelected)="optionSelected($event)">
+            <mat-option *ngFor="let painting of paintings" [value]="painting">
+                {{painting.title}}
+            </mat-option>
+            <mat-option value="" *ngIf="paintings.length===0 && term.trim().length > 0">We found nothing with the term
+                {{term}}</mat-option>
+        </mat-autocomplete>
+
+
+
+    </mat-form-field>
+
+
+    <div>
+        <pre>{{paintingSelected | json}}</pre>
+    </div>
+
+    <div *ngIf="paintingSelected">
+        <app-painting-card [painting]="paintingSelected"></app-painting-card>
+    </div>
+
+</div>

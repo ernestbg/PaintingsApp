@@ -1,0 +1,14 @@
+<h2>List of paintings</h2>
+
+
+<mat-divider></mat-divider>
+<br>
+
+<div fxLayout="row wrap" fxLayoutAlign="center" fxLayoutGap="20px" fxLayout.xs="column">
+
+    <div fxFlex="20" *ngFor="let painting of paintings" fxFlex.lg="25" fxFlex.sm="30">         
+        <app-painting-card [painting]="painting"></app-painting-card>
+    </div>
+
+
+</div>

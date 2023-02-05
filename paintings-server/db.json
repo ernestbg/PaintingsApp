@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "user": "Ernesto",
+      "email": "ernesto@gmail.com"
+    }
+  ],
+  "paintings": [
+    {
+      "id": "1",
+      "title": "Arearea",
+      "artist": "Paul Gauguin",
+      "style": "Postimpresionismo",
+      "location": "Museo de Orsay, París",
+      "date": "1892",
+      "technique": "Óleo sobre lienzo"
+    },
+    {
+      "id": "2",
+      "title": "La noche estrellada",
+      "artist": "Vincent van Gogh",
+      "style": "postimpresionismo",
+      "date": "1889",
+      "location": "Museo de Arte Moderno, Nueva York",
+      "technique": "Óleo sobre lienzo"
+    },
+    {
+      "id": "3",
+      "title": "Dido construye Cártago",
+      "artist": "William Turner",
+      "style": "Romanticismo",
+      "date": "",
+      "location": "",
+      "technique": ""
+    },
+    {
+      "id": "4",
+      "title": "El carro de heno",
+      "artist": "John Constable",
+      "style": "Romanticismo",
+      "date": "",
+      "location": "",
+      "technique": ""
+    },
+    {
+      "id": "5",
+      "title": "Etapas de la vida",
+      "artist": "Caspar David Friedrich",
+      "style": "Romanticismo",
+      "date": "",
+      "location": "",
+      "technique": ""
+    }, {
+      "id": "6",
+      "title": "Impresión, Sol naciente",
+      "artist": "Monet",
+      "style": "Impresionismo",
+      "date": "",
+      "location": "",
+      "technique": ""
+    }
+  ]
+}
